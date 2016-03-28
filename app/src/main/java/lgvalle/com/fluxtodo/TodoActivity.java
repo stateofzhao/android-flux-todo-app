@@ -111,6 +111,8 @@ public class TodoActivity extends AppCompatActivity {
 
     private void addTodo() {
         if (validateInput()) {
+            //创建Action并且通过Dispatcher传递给TodoStore来执行业务操作，然后发送结果给本Activity
+            //（通过本Activity的Bus注册方法 onTodoStoreChange()来传递结果）。
             actionsCreator.create(getInputText());
         }
     }
