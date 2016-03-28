@@ -4,7 +4,7 @@ import lgvalle.com.fluxtodo.dispatcher.Dispatcher;
 import lgvalle.com.fluxtodo.model.Todo;
 
 /**
- * 一个app应该只有一个AtionsCreator
+ * 一个app应该只有一个ActionsCreator
  * <p/>
  * Created by lgvalle on 02/08/15.
  */

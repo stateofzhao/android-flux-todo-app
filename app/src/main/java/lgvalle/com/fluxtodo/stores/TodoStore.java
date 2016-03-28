@@ -1,16 +1,15 @@
 package lgvalle.com.fluxtodo.stores;
 
 import com.squareup.otto.Subscribe;
+import lgvalle.com.fluxtodo.actions.Action;
+import lgvalle.com.fluxtodo.actions.TodoActions;
+import lgvalle.com.fluxtodo.dispatcher.Dispatcher;
+import lgvalle.com.fluxtodo.model.Todo;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-
-import lgvalle.com.fluxtodo.actions.Action;
-import lgvalle.com.fluxtodo.actions.TodoActions;
-import lgvalle.com.fluxtodo.dispatcher.Dispatcher;
-import lgvalle.com.fluxtodo.model.Todo;
 
 /**
  * Created by lgvalle on 02/08/15.
@@ -41,7 +40,6 @@ public class TodoStore extends Store {
     public boolean canUndo() {
         return lastDeleted != null;
     }
-
 
     @Override
     @Subscribe

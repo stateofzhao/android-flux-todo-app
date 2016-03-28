@@ -6,6 +6,7 @@ import lgvalle.com.fluxtodo.actions.Action;
 import lgvalle.com.fluxtodo.stores.Store;
 
 /**
+ *
  * Created by lgvalle on 19/07/15.
  */
 public class Dispatcher {
@@ -25,7 +26,6 @@ public class Dispatcher {
 
     public void register(final Object cls) {
         bus.register(cls);
-
     }
 
     public void unregister(final Object cls) {
