@@ -25,6 +25,16 @@ public abstract class Store {
         dispatcher.emitChange(changeEvent());
     }
 
+    /** 注册Store中状态改变时的回调（订阅Store中状态的改变） */
+    public void register(Object object) {
+        dispatcher.register(object);
+    }
+
+    /** 取消Store中状态改变时的回调（取消订阅Store中状态的改变） */
+    public void unRegister(Object object) {
+        dispatcher.unregister(object);
+    }
+
     abstract StoreChangeEvent changeEvent();
 
     public abstract void onAction(Action action);
