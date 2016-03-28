@@ -1,6 +1,8 @@
 package lgvalle.com.fluxtodo.model;
 
 /**
+ * 非 业务Model，只是纯数据持有Model。
+ * <p/>
  * Created by lgvalle on 02/08/15.
  */
 public class Todo implements Cloneable, Comparable<Todo> {
@@ -37,7 +39,7 @@ public class Todo implements Cloneable, Comparable<Todo> {
     }
 
     @Override
-    public Todo clone()  {
+    public Todo clone() {
         return new Todo(id, text, complete);
     }
 

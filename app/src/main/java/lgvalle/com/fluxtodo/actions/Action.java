@@ -3,6 +3,11 @@ package lgvalle.com.fluxtodo.actions;
 import java.util.HashMap;
 
 /**
+ * 简单的java POJO 类，保存type和数据。传递给Dispatcher然后Dispatcher再分发给所有对此Action感兴趣
+ * 的Store（在此例子中是把 所有已存在Store都注册给了Dispatcher，Dispatcher会把所有传递过来的
+ * Action分发给所有Store，然后Store根据Action的type来决定是否执行以及执行何种操作），
+ * 之后Store根据Action的type来进行相应的操作，之后Store通知View来更新View状态。
+ * <p/>
  * Created by lgvalle on 22/07/15.
  */
 public class Action {

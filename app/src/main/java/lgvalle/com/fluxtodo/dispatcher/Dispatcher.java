@@ -6,7 +6,8 @@ import lgvalle.com.fluxtodo.actions.Action;
 import lgvalle.com.fluxtodo.stores.Store;
 
 /**
- *
+ * 负责分发所有 Action，来确保数据流是单向的，Action-->Dispatcher-->Store-->View。
+ * <p/>
  * Created by lgvalle on 19/07/15.
  */
 public class Dispatcher {

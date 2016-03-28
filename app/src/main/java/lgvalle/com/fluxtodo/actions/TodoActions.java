@@ -1,6 +1,8 @@
 package lgvalle.com.fluxtodo.actions;
 
 /**
+ * 封装了所有Todo这个Acton的所有操作类型type和数据键名，这里需要注意Action对应的type一定要全局唯一。
+ * <p/>
  * Created by lgvalle on 02/08/15.
  */
 public interface TodoActions {

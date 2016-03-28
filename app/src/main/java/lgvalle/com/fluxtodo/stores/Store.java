@@ -9,7 +9,8 @@ import lgvalle.com.fluxtodo.dispatcher.Dispatcher;
  * <p/>
  * 系统中的其他任何模块都不需要知道此时App状态。（这句话不是很理解）
  * <p/>
- * Store必须暴露一个接口来让View获取App状态，这样View模块就可以访问Store模块来更新UI了。
+ * Store必须暴露一个接口来让View获取App状态，这样View模块就可以访问Store模块来更新UI了。在本例中，
+ * 直接通过{@link Dispatcher}来暴露了接口。
  * <p/>
  * Created by lgvalle on 02/08/15.
  */
