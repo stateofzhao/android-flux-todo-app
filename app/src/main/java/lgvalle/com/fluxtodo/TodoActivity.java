@@ -96,7 +96,7 @@ public class TodoActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        dispatcher.register(this);
+        dispatcher.register(this);//这么写不便于理解，其实这个注册的是TodoStore的回调
         dispatcher.register(todoStore);
     }
 
